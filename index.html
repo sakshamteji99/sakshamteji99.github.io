@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saksham's Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+    nav.navbar {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+      background: #f5f9ff;
+    }
+    .hero h1 {
+      font-weight: 700;
+    }
+    section {
+      padding: 80px 0;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    .skill-card {
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #fff;
+      border-top: 1px solid #eee;
+      padding: 30px 0;
+      text-align: center;
+      color: #777;
+    }
+    .profile-pic {
+      width: 600px;
+      height: 600px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+	.about-text {
+  		font-size: 1.3rem; /* ~21px */
+  		line-height: 1.7;  /* improves readability */
+	}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="">Saksham's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" data-target="about">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" data-target="experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" data-target="skills">Skillset</a></li>
+          <li class="nav-item"><a class="nav-link" data-target="projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" data-target="contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Hello, I'm Saksham Teji</h1>
+      <p class="lead">A passionate software engineer building modern solutions with a constant drive to learn and evolve.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container text-center">
+      <img src="./images/DP.jpeg" 
+           alt="My Profile Picture" 
+           class="profile-pic">
+      <p class="mt-4 about-text">
+        I am a Full Stack Software Engineer with over 4 years of experience, having expertise in architecting fault-tolerant microservices and various cloud technologies. Proficient in Spring Boot, Flask, Django, React, and cloud-native DevOps practices, I focus on delivering scalable, high-impact products. Experienced across AWS, Azure, and multi-cloud environments, I am currently expanding my focus on Data Science and AI—believing that’s where the future truly lies.
+      </p>
+      <a href="" target="_blank" class="btn btn-primary mt-3">View Resume</a>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="bg-light">
+    <div class="container">
+      <h2 class="text-center">Industry Experience</h2>
+      <div class="row">
+        
+        <div class="col-md-6">
+          <div class="skill-card">
+            <h5>Software Developer – Amadeus Labs</h5>
+            <p><strong>August 2022 – Present</strong></p>
+            <ul class="text-start">
+				<li>Designed and implemented fault-tolerant microservices in <b>Spring Boot</b> for <b>Amadeus CMD backend</b>, powering
+					hotel reservation flow for over <b>4200 properties</b> across <b>10+ brands</b> of leading hotel chains including <b>Marriott,
+					Accor</b> and <b>MGM</b>, increasing org revenue by over <b>$156000 annually</b></li>
+					
+					<li>Led the migration of a mission-critical distributed system from private cloud to <b>Azure IaaS</b> ensuring <b>99.99% up-
+					time</b> across <b>5 million monthly transactions</b></li>
+					
+					<li>Engineered and deployed <b>Spring Boot</b> and <b>React microservices</b> via <b>Docker</b> and <b>CI/CD</b>, achieving <b>40% faster re-
+					lease cycles</b> through automation and managed services</li>
+					
+					<li>Contributed to the development and deployment of an <b>agentic AI pipeline</b> using <b>Python, Flask, GPT-4, and Azure</b>,
+					reducing application processing time from <b>30 minutes</b> to <b>4 minutes</b></li>
+					
+					<li>Engineered a high-performance <b>Flask microservice</b> for quicker data retrieval and integrated it with <b>legacy backend</b>,
+					improving response times by <b>60%+</b> and boosting system throughput by <b>2.5×</b></li>
+					
+					<li>Took ownership in the <b>Frontline Support Agile Scrum team</b>, collaborated cross-functionally, and extended support
+					on customer tickets, reducing the backlog by <b>65%</b></li>
+					
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="skill-card">
+            <h5>SDE Intern – Amadeus Labs</h5>
+            <p><strong>January 2022 – July 2022</strong></p>
+            <ul class="text-start">
+				<li>Developed and deployed responsive financial dashboards using <b>React</b> and <b>Spring Boot</b>, automating manual re-
+					port reviews and saving an estimated <b>$8000/month</b> in auditor time</li>
+					
+					<li>Optimized <b>API integrations</b> by caching frequent responses reducing data load time by <b>30%</b> and enabled reuse
+					across <b>10+ microservices</b></li>
+					
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="text-center">Areas I can contribute</h2>
+      <div class="row">
+        
+        <div class="col-md-3">
+          <div class="skill-card">
+            <h5>Frontend Development</h5>
+            <ul style="padding-left: 20px; margin: 0;">
+				<li>React</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>Typescript</li>
+				<li>Boostrap</li>
+			</ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <h5>Backend Development</h5>
+			<ul style="padding-left: 20px; margin: 0;">
+            	<li>Spring Boot</li>
+				<li>Flask</li>
+				<li>Node.js</li>
+				<li>Django</li>
+				<li>C++</li>
+				<li>Python</li>
+				<li>Java</li>
+		  </ul>	
+				 
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+			<h5>Cloud and DevOps</h5>
+            <ul style="padding-left: 20px; margin: 0;">
+            	<li>AWS</li>
+				<li>Azure</li>
+				<li>GCP</li>
+				<li>CI/CD</li>
+				<li>Linux</li>
+				<li>Docker</li>
+				<li>Kubernetes</li>
+				
+		  </ul>	
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <h5>Data Science and AI</h5>
+			<ul style="padding-left: 20px; margin: 0;">
+            	<li>scikit-learn</li>
+				<li>Numpy</li>
+				<li>Pandas</li>
+				<li>Tensorflow</li>
+				<li>GPT-4</li>
+				<li>Agentic-AI</li>
+				<li>Gen-AI</li>
+				
+		  </ul>	
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+<section id="projects" class="bg-light py-5">
+	<div class="container">
+	  <h2 class="text-center mb-4">Projects</h2>
+	  <div class="row g-4">
+  
+		<!-- MedSync -->
+		<div class="col-md-6">
+		  <div class="skill-card p-3 shadow-sm rounded bg-white h-100">
+			<div class="d-flex justify-content-between align-items-center mb-2">
+			  <h5 class="mb-0">MedSync</h5>
+			  <a href="https://doctor-report-frontend-720901500415.asia-south1.run.app/" target="_blank" class="btn btn-sm btn-outline-primary">Live Link</a>
+			</div>
+			<ul style="padding-left: 20px; margin: 0;">
+			  <li>Engineered a full-stack system with a real-time <b>React dashboard (WebSockets)</b> to automate the generation of
+				<b>.docx medical reports</b>, replacing a manual process</li>
+			  <li>Containerized the application with <b>Docker</b> and automated the deployment process using a <b>CI/CD pipeline</b> with
+				<b>GitHub Actions</b>, ensuring reliable updates</li>
+			  <li><b>Tech Stack:</b> <b>Python, Flask, React, TypeScript, PostgreSQL, Socket.IO, Material-UI, Tailwind CSS, Google Cloud</b></li>
+			</ul>
+		  </div>
+		</div>
+  
+		<!-- CryptoInference -->
+		<div class="col-md-6">
+		  <div class="skill-card p-3 shadow-sm rounded bg-white h-100">
+			<div class="d-flex justify-content-between align-items-center mb-2">
+			  <h5 class="mb-0">CryptoInference</h5>
+			  <a href="https://partial-homomorphic-encryption-156469903131.europe-west1.run.app/" target="_blank" class="btn btn-sm btn-outline-primary">Live Link</a>
+			</div>
+			<ul style="padding-left: 20px; margin: 0;">
+			  <li>Developed a <b>privacy-preserving ML system</b> using <b>Partial Homomorphic Encryption (Paillier)</b> to perform inference
+				on fully encrypted user data</li>
+			  <li>Containerized the application with <b>Docker</b> and automated the deployment process using a <b>CI/CD pipeline</b> with
+				<b>GitHub Actions</b>, ensuring reliable updates</li>
+			  <li><b>Tech Stack:</b> <b>Python, Flask, React, TypeScript, PostgreSQL, Socket.IO, Material-UI, Tailwind CSS, Google Cloud</b></li>
+			</ul>
+		  </div>
+		</div>
+  
+	  </div>
+	</div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container text-center">
+      <h2>Get in Touch</h2>
+	  <p>Mobile: <a>+91-9501151175</a></p>
+      <p>Email: <a href="mailto:tejisaksham99@gmail.com">tejisaksham99@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sakshamteji/">linkedin.com/in/sakshamteji</a></p>
+      <p>GitHub: <a href="https://www.github.com/sakshamteji99/">github.com/sakshamteji99</a></p>
+	  
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script to handle smooth scroll without hash -->
+  <script>
+    document.querySelectorAll('a.nav-link[data-target]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
