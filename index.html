@@ -53,7 +53,8 @@
       height: 600px;
       object-fit: cover;
       border-radius: 50%;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      margin-top: -150px;
     }
 	.about-text {
   		font-size: 1.3rem; /* ~21px */
@@ -96,9 +97,9 @@
            alt="My Profile Picture" 
            class="profile-pic">
       <p class="mt-4 about-text">
-        I am a Full Stack Software Engineer with over 4 years of experience, having expertise in architecting fault-tolerant microservices and various cloud technologies. Proficient in Spring Boot, Flask, Django, React, and cloud-native DevOps practices, I focus on delivering scalable, high-impact products. Experienced across AWS, Azure, and multi-cloud environments, I am currently expanding my focus on Data Science and AI—believing that’s where the future truly lies.
+        I am a Full Stack Software Engineer with over 4 years of experience, having expertise in architecting fault-tolerant microservices and various cloud technologies. Proficient in Spring Boot, Flask, Django, React, and cloud-native DevOps practices, I focus on delivering scalable, high-impact products. Experienced across multi-cloud environments(AWS, Azure, GCP), I am currently expanding my focus on Data Science and AI, believing that’s where the future truly lies.
       </p>
-      <a href="" target="_blank" class="btn btn-primary mt-3">View Resume</a>
+      <!-- <a href="" target="_blank" class="btn btn-primary mt-3">View Resume</a> -->
     </div>
   </section>
 
@@ -113,24 +114,28 @@
             <h5>Software Developer – Amadeus Labs</h5>
             <p><strong>August 2022 – Present</strong></p>
             <ul class="text-start">
-				<li>Designed and implemented fault-tolerant microservices in <b>Spring Boot</b> for <b>Amadeus CMD backend</b>, powering
-					hotel reservation flow for over <b>4200 properties</b> across <b>10+ brands</b> of leading hotel chains including <b>Marriott,
-					Accor</b> and <b>MGM</b>, increasing org revenue by over <b>$156000 annually</b></li>
-					
-					<li>Led the migration of a mission-critical distributed system from private cloud to <b>Azure IaaS</b> ensuring <b>99.99% up-
-					time</b> across <b>5 million monthly transactions</b></li>
-					
-					<li>Engineered and deployed <b>Spring Boot</b> and <b>React microservices</b> via <b>Docker</b> and <b>CI/CD</b>, achieving <b>40% faster re-
-					lease cycles</b> through automation and managed services</li>
-					
-					<li>Contributed to the development and deployment of an <b>agentic AI pipeline</b> using <b>Python, Flask, GPT-4, and Azure</b>,
-					reducing application processing time from <b>30 minutes</b> to <b>4 minutes</b></li>
-					
-					<li>Engineered a high-performance <b>Flask microservice</b> for quicker data retrieval and integrated it with <b>legacy backend</b>,
-					improving response times by <b>60%+</b> and boosting system throughput by <b>2.5×</b></li>
-					
-					<li>Took ownership in the <b>Frontline Support Agile Scrum team</b>, collaborated cross-functionally, and extended support
-					on customer tickets, reducing the backlog by <b>65%</b></li>
+              
+
+
+
+<li>Designed and implemented fault-tolerant microservices in <b>Spring Boot</b> for <b>Amadeus CMD backend</b>, powering
+  hotel reservation flow for over <b>4200 properties</b> across <b>10+ brands</b> of leading hotel chains including <b>Marriott,
+  Accor</b> and <b>MGM</b>, increasing org revenue by over <b>$156000 annually</b></li>
+  
+  <li>Led the migration of a mission-critical distributed system from private cloud to <b>Azure IaaS</b> ensuring <b>99.99% uptime</b> across <b>5 million monthly transactions</b></li>
+  
+  <li>Pioneered the <b>decomposition of legacy monoliths</b>  into <b>Spring Boot</b> microservices and <b>React</b> micro front-ends,
+    achieving performance gains like <b>100ms page loads</b> and <b>60ms service latencies</b>, with zero downtime during rollout</li>
+  
+  <li>Contributed to the development and deployment of an <b>agentic AI pipeline</b> using <b>Python, Flask, GPT-4, and Azure</b>,
+  reducing application processing time from <b>30 minutes</b> to <b>4 minutes</b></li>
+  <li>Assisted DevOps team by managing <b>ansible playbooks</b>, DB switchovers, <b>kernel updates</b>, <b>PCI-DSS compliance</b>
+etc, ensuring <b>9.99% uptime across 5 million monthly transactions</b></li>
+  <li>Engineered a high-performance <b>Flask microservice</b> for quicker data retrieval and integrated it with <b>legacy backend</b>,
+  improving response times by <b>60%+</b> and boosting system throughput by <b>2.5×</b></li>
+  
+  <li>Took ownership in the <b>Frontline Support Agile Scrum team</b>, collaborated cross-functionally, and extended support
+  on customer tickets, reducing the backlog by <b>65%</b></li>
 					
             </ul>
           </div>
@@ -265,7 +270,47 @@
   
 	  </div>
 	</div>
-  </section>
+  
+  <!-- Banking Solution -->
+  <!-- <div class="col-md-6">
+    <div class="skill-card p-3 shadow-sm rounded bg-white h-100">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="mb-0">Banking Solution</h5>
+      <a href="https://partial-homomorphic-encryption-156469903131.europe-west1.run.app/" target="_blank" class="btn btn-sm btn-outline-primary">Live Link</a>
+    </div>
+    <ul style="padding-left: 20px; margin: 0;">
+      <li>Built <b>production-ready microservices</b> for the <b>banking domain</b> (Accounts, Cards, and Loans) using 15 Factor Methodology</li>
+      <li>Managed centralized configuration using <b>Spring Cloud Config Server</b>, with service discovery through <b>Eureka Server</b></li>
+      <li>Implemented resilience with <b>Resilience4j</b> (retries, circuit breakers, rate limiting)</li>
+      <li>Configured <b>API Gateway</b> using <b>Spring Cloud Gateway</b> with custom routing and filters</li>
+      <li>Enabled async messaging with <b>Kafka</b> via <b>Spring Cloud Stream</b> for scalable communication</li>
+      <li>Secured microservices using <b>Keycloak</b> and <b>Spring Security</b> with <b>OAuth2 and RBAC</b></li>
+      <li>Set up centralized monitoring with <b>Prometheus and Grafana</b> for real-time observability using <b>OpenTelemetry</b> concepts</li>
+      
+    </ul>
+    </div>
+  </div> -->
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-6">
+      <div class="skill-card p-3 shadow-sm rounded bg-white h-100">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h5 class="mb-0">Banking Solution</h5>
+          <a href="https://github.com/sakshamteji99/Banking_Solution" target="_blank" class="btn btn-sm btn-outline-primary">Github</a>
+        </div>
+        <ul style="padding-left: 20px; margin: 0;">
+          <li>Built <b>production-ready microservices</b> for the <b>banking domain</b> (Accounts, Cards, and Loans) using 15 Factor Methodology</li>
+          <li>Managed centralized configuration using <b>Spring Cloud Config Server</b>, with service discovery through <b>Eureka Server</b></li>
+          <li>Implemented resilience with <b>Resilience4j</b> (retries, circuit breakers, rate limiting)</li>
+          <li>Configured <b>API Gateway</b> using <b>Spring Cloud Gateway</b> with custom routing and filters</li>
+          <li>Enabled async messaging with <b>Kafka</b> via <b>Spring Cloud Stream</b> for scalable communication</li>
+          <li>Secured microservices using <b>Keycloak</b> and <b>Spring Security</b> with <b>OAuth2 and RBAC</b></li>
+          <li>Set up centralized monitoring with <b>Prometheus and Grafana</b> for real-time observability using <b>OpenTelemetry</b> concepts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
   
   <!-- Contact -->
   <section id="contact">
