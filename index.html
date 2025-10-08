@@ -97,7 +97,7 @@
            alt="My Profile Picture" 
            class="profile-pic">
       <p class="mt-4 about-text">
-        I am a backendOps heavy full Stack Software Engineer with over 4 years of experience, having expertise in architecting fault-tolerant microservices and various cloud technologies. Proficient in Spring Boot, Flask, React, C++ development and cloud-native DevOps practices, I focus on delivering scalable, high-impact products. Experienced across multi-cloud environments(AWS, Azure, GCP), I am currently expanding my focus on Data Science and AI, believing that’s where the future truly lies.
+        I am a Full-Stack Software Engineer with over 4 years of experience, having expertise in architecting fault-tolerant microservices and various cloud technologies. Proficient in Spring Boot, Flask, React, C++ development and cloud-native DevOps practices, I focus on delivering scalable, high-impact products. Experienced across multi-cloud environments(AWS, Azure, GCP), I am currently expanding my focus on Data Science and AI, believing that’s where the future truly lies.
       </p>
       <!-- <a href="" target="_blank" class="btn btn-primary mt-3">View Resume</a> -->
     </div>
@@ -159,55 +159,134 @@ etc, ensuring <b>9.99% uptime across 5 million monthly transactions</b></li>
       </div>
     </div>
   </section>
+  <style>
+  /* === Light & Subtle Skills Section === */
+.sks-section-x2 {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f7f9fb 0%, #eef2f7 100%);
+  color: #1e293b;
+  text-align: center;
+}
 
+.sks-title-x2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1e293b;
+  letter-spacing: 0.4px;
+  position: relative;
+}
+
+.sks-title-x2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #38bdf8;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.sks-card-x2 {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 35px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.sks-card-x2:hover {
+  transform: translateY(-5px);
+  border-color: #93c5fd;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.sks-heading-x2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.sks-list-x2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sks-list-x2 li {
+  font-size: 0.95rem;
+  color: #475569;
+  margin: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.sks-list-x2 li:hover {
+  color: #0284c7;
+}
+
+</style>
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="sks-section-x2">
     <div class="container">
-      <h2 class="text-center">Areas I can contribute</h2>
-      <div class="row">
-        
-        <div class="col-md-3">
-          <div class="skill-card">
-            <h5>Frontend Development</h5>
-            <ul style="padding-left: 20px; margin: 0;">
-				<li>React</li>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>Typescript</li>
-				<li>Boostrap</li>
-			</ul>
+      <h2 class="sks-title-x2">Areas I Can Contribute</h2>
+      <div class="row justify-content-center gy-4">
+  
+        <!-- Frontend -->
+        <div class="col-lg-4 col-md-6">
+          <div class="sks-card-x2">
+            <h5 class="sks-heading-x2">Frontend Development</h5>
+            <ul class="sks-list-x2">
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="skill-card">
-            <h5>Backend Development</h5>
-			<ul style="padding-left: 20px; margin: 0;">
-            	<li>C++</li>
-				<li>Java 8</li>
-				<li>Spring Boot</li>
-				<li>Flask</li>
-				<li>Python</li>
-				
-		  </ul>	
-				 
+  
+        <!-- Backend -->
+        <div class="col-lg-4 col-md-6">
+          <div class="sks-card-x2">
+            <h5 class="sks-heading-x2">Backend Development</h5>
+            <ul class="sks-list-x2">
+              <li>C++</li>
+              <li>Java 8</li>
+              <li>Spring Boot</li>
+              <li>Flask</li>
+              <li>Python</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="skill-card">
-			<h5>Cloud and DevOps</h5>
-            <ul style="padding-left: 20px; margin: 0;">
-            	<li>AWS</li>
-				<li>Azure</li>
-				<li>GCP</li>
-				<li>CI/CD</li>
-				<li>Linux</li>
-				<li>Docker</li>
-				<li>Kubernetes</li>
-				
-		  </ul>	
+  
+        <!-- Cloud & DevOps -->
+        <div class="col-lg-4 col-md-6">
+          <div class="sks-card-x2">
+            <h5 class="sks-heading-x2">Cloud & DevOps</h5>
+            <ul class="sks-list-x2">
+              <li>AWS</li>
+              <li>Azure</li>
+              <li>GCP</li>
+              <li>CI/CD</li>
+              <li>Linux</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>Terraform</li>
+            </ul>
           </div>
         </div>
+  
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- <div class="col-md-3">
           <div class="skill-card">
             <h5>Data Science and AI</h5>
@@ -223,9 +302,7 @@ etc, ensuring <b>9.99% uptime across 5 million monthly transactions</b></li>
 		  </ul>	
           </div>
         </div> -->
-      </div>
-    </div>
-  </section>
+ 
 
   <!-- Projects -->
 <section id="projects" class="bg-light py-5">
@@ -317,6 +394,7 @@ etc, ensuring <b>9.99% uptime across 5 million monthly transactions</b></li>
       <h2>Get in Touch</h2>
 	  <p>Mobile: <a>+91-9501151175</a></p>
       <p>Email: <a href="mailto:tejisaksham99@gmail.com">tejisaksham99@gmail.com</a></p>
+     
       <p>LinkedIn: <a href="https://www.linkedin.com/in/sakshamteji/">linkedin.com/in/sakshamteji</a></p>
       <p>GitHub: <a href="https://www.github.com/sakshamteji99/">github.com/sakshamteji99</a></p>
 	  
